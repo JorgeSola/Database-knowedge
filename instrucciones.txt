@@ -1,0 +1,9 @@
+Este código solo funciona si las columnas de la tabla sql no van a cambiar y si el archivo json 
+saca todos los valores siempre en el mismo orden.
+
+Si queremos evitar introducir rows que tengan algún campo vacío, solo tenemos que ver la longitud 
+del row y ver si es menor que el numero de columnas que tiene la tabla.
+
+Si aunque la longitud sea la misma, hay algún campo vacío, podemos recorre la row, y ver si algún campo 
+está sin completar ' '. Con un 'if', podemos gestionarlo.
+
